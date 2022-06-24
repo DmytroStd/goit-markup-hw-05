@@ -139,6 +139,27 @@ p {
     color: var(--primary-text-color);
 }
 
+.menu-item {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    min-width: 100%;
+    height: 4px;
+
+    background-color: var(--accent-color);
+
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
 .nav {
     display: flex;
 }
@@ -159,12 +180,10 @@ p {
     background-image: url(../images/Vector.png);
     background-size: contain;
 
-} */
-
-/* .site-nav .item:not(:last-child) {
+} 
+.site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
-
 .site-cont .item:not(:last-child) {
     margin-right: 50px;
 } */

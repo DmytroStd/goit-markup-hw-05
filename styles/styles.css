@@ -313,6 +313,41 @@ p {
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.functions-card {
+    position: relative;
+    border: none;
+}
+
+.function-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+
+    color: var(--hero-text-color);
+    background: rgba(47, 48, 58, 0.8);
+    min-width: 370px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+
+.functions-pic {
+    margin-bottom: -4px;
 }
 
 .feature,
@@ -324,12 +359,11 @@ p {
 .feature,
 .functions {
     justify-content: space-between;
-
 }
 
-.functions .item {
+/* .functions .item {
     margin-bottom: -4px;
-}
+} */
 
 /* .functions .item+.item {
     margin-left: 30px;

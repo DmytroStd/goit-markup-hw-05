@@ -460,16 +460,60 @@
             </li>
           </ul>
         </div>
+        <div>
+          <h3 class="footer-email-title">Подпишитесь на рассылку</h3>
+          <div class="footer-email-input">
+          <form class="footer-email-form">
+            <label class="" for="email">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-imput-btn" type="submit">
+              <span>Подписаться</span>
+              <svg class="footer-email-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- backdrop 1 -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal>
-        <p></p>
         <button class="reset-btn" type="button" data-modal-close>
           <svg class="bd-close-icon" width="50px" height="14px">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <form class="form-list" name="recall-form" novalidate>
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form-item" for="user-name">Имя</label>
+          <input type="text" name="name" id="user-name" autofocus /><br />
+          <label class="form-item" for="user-tel">Телефон</label>
+          <input type="tel" name="phone-number" id="user-tel" /><br />
+          <label class="form-item" for="email">Почта</label>
+          <input type="emeil" name="email" id="email" /><br />
+          <label class="form-item" for="comment">Комментарий</label>
+          <input type="text" name="comment" placeholder="Введите текст" />
+          <br />
+          <input type="checkbox" name="" id="" />
+
+          <!-- <p class="form-text">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="form-link" href="">Условия договора</a>
+          </p> -->
+            <label for="checkbox">
+            Соглашаюсь с рассылкой и принимаю
+            <a class="form-link" href="">Условия договора</a>
+          </label>
+          <button class="form-btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
